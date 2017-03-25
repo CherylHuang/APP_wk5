@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, StatusBar } from 'react-native';
 import Header from './src/components/Header';
 import Options from './src/components/Options';
 import Nav from './src/components/Nav';
@@ -8,6 +8,8 @@ const page2 = () => {
     const { container, img, img2, box } = styles;
     return (
         <View style={[container]}>
+            <StatusBar barStyle='light-content' />
+
             <Header headerText={'Hearthstone'} />
             <Options />
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, StatusBar } from 'react-native';
 import Search from './src/components/Search';
 import Options from './src/components/Options';
 import Nav from './src/components/Nav';
@@ -8,6 +8,8 @@ const page2 = () => {
     const { container, img, box, row, row2 } = styles;
     return (
         <View style={[container]}>
+            <StatusBar barStyle='light-content' />
+
             <Search />
 
             <View style={[box]}>
